@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Cão Feliz - Minha Conta</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/Fase 1.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="button-style" href="index.html">Página Inicial</a></li>
+                <li><a class="button-style" href="servicos.html">Serviços</a></li>
+                <li><a class="button-style" href = "produtos.html">Produtos</a></li>
+                <li><a class="button-style" href="conta.html">Minha Conta</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <section class="servicos-destaque">
+        <div><h2>REGISTRAR PET</h2></div>
+        <div class="campo-formulario">
+            <form id="animalForm">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="tipo" placeholder="Tipo">
+                <input type="text" id="raca" placeholder="Raça">
+                <input type="text" id="temperamento" placeholder="Temperamento">
+                <button type="button" onclick="cadastrarAnimal()">Cadastrar Animal</button>
+            </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/Fase 1.png">
+                        </div>
+                        <ul>
+                            <li><a href="#">contato@caofeliz.com.br</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2023 Pet Shop Cao Feliz 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    <link rel="stylesheet" href="assets/css/styles.css"/>  
+    <script src="assets/js/validacao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/loading.js"></script>
+    <script src="assets/js/firebase-init.js"></script>
+    <script src="assets/js/cadastropet.js"></script>
+</html>

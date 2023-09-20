@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Cão Feliz - Cadastro</title>
+</head>
+<body>
+    <form>
+        <div>
+            <h1>Pet Shop Cão Feliz</h1>
+        </div>
+        <div><h2>REGISTRO</h2></div>
+        <div class="campo-formulario">
+            <div><label>Nome Completo</label></div>
+            <input type="text" placeholder="Digite seu Nome">
+        </div>
+        <div class="campo-formulario">
+            <div><label>Telefone</label></div>
+            <input type="tel" placeholder="Digite seu telefone">
+        </div>
+        <div class="campo-formulario">
+            <div><label>CPF</label></div>
+            <input type="number" placeholder="Digite seu CPF">
+        </div>
+        <div class="campo-formulario">
+            <div><label>Data Nascimento</label></div>
+            <input type="date" placeholder="Digite sua data de nascimento">
+        </div>
+        <div class="campo-formulario">
+            <div><label>E-mail</label></div>
+            <input type="email" placeholder="Digite seu email" onchange="onChangeEmail()" id="email"/>
+            <div class="erro" id="erro-email-obrigatorio">
+                E-mail obrigatório
+            </div>
+            <div class="erro" id="erro-email-invalido">
+                E-mail invalido
+            </div>
+        </div>
+        <div class="campo-formulario">
+            <div><label>Senha</label></div>
+            <input type="password" placeholder="Digite sua senha" id="password" onchange="onChangePassword()"/>
+            <div class="erro" id="erro-password-obrigatorio">
+                Senha obrigatório
+            </div>
+            <div class="erro" id="erro-tamanho-password-invalido">
+                Senha deve conter pelo menos 6 caracteres.
+            </div>
+        </div class="campo-formulario">
+        <div>
+            <div><label>Confirmar Senha</label></div>
+            <input type="password" class="campo-formulario" placeholder="Confirme sua senha" id='confirmePassword' onchange="onChangeConfirmPassword()"/>
+            <div class="erro" id="erro-password-diferente">
+                Senha e confirmar senha devem ser iguais
+            </div>
+        </div>
+        <div>
+            <button type="button" class="solida" onclick="registrar()" id="botao-registrar" disabled="true">Registrar</button> 
+        </div>
+        <div>
+            <button type="button" class="claro">Login</button> 
+        </div>
+    </form>  
+</body>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+    <script src="assets/js/validacao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="assets/js/firebase-init.js"></script>
+    <script src="assets/js/cadastro.js"></script>
+</html>

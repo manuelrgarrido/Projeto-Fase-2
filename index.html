@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Shop Cão Feliz - Login</title>
+</head>
+<body>
+    <form>
+        <div>
+            <h1>Pet Shop Cão Feliz</h1>
+        </div>
+        <div><h2>LOGIN</h2></div>
+        <div class="campo-formulario">
+            <div><label>E-mail</label></div>
+            <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="Digite seu e-mail">
+            <div class="erro" id='erro-email-obrigatorio'>E-mail obrigatório</div>
+            <div class="erro" id='erro-email-invalido'>E-mail invalido</div>
+        </div>
+        <div class="campo-formulario">
+            <div><label>Senha</label></div>
+            <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Digite sua senha">
+            <div class="erro" id='password-requerido'>Senha obrigatória</div>
+        </div>
+        <div>
+            <button type="button" class="claro" id="recover-password-button" onclick="recoverPassword()" disabled="true"> Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="solida" id="login-button" onclick="login()"> Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="registro" onclick="window.location.href='cadastro.html'"> Registrar</button>
+        </div>
+    </form>
+    
+</body>
+    <link rel="stylesheet" href="assets/css/login.css"/>
+    <script src="assets/js/validacao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="index.js"></script>
+    <script src="assets/js/loading.js"></script>
+    <script src="assets/js/firebase-init.js"></script>
+</html>

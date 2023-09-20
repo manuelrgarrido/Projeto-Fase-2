@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Cão Feliz - Serviços</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/Fase 1.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="button-style" href="index.html">Página Inicial</a></li>
+                <li><a class="button-style" href="servicos.html">Serviços</a></li>
+                <li><a class="button-style" href = "produtos.html">Produtos</a></li>
+                <li><a class="button-style" href="conta.html">Minha Conta</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <section class="servicos-destaque">
+        <h1>Serviços</h1>
+        <div class="servico">
+            <img src="assets/images/banhoetosa2.jpeg" alt="Nome do Serviço 1" width="100px" height="100px">
+            <h3>Banho Cachorro Pequeno</h3>
+            <p>R$ 50,00</p>
+        </div>
+        <div class="servico">
+            <img src="assets/images/banhoetosa.png" alt="Nome do Serviço 2" width="100px" height="100px">
+            <h3>Banho Cachorro Médio</h3>
+            <p>R$ 75,00</p>
+        </div>
+        <div class="servico">
+            <img src="assets/images/banhotosa1.jpeg" alt="Nome do Serviço 3" width="100px" height="100px">
+            <h3>Banho Cachorro Grande</h3>
+            <p>R$ 90,00</p>
+        </div>
+    </section>
+    <section>
+        <h1>AGENDAMENTO</h1>
+        <form id="agendamentoForm">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+        
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+        
+            <label for="tipoServico">Tipo de Serviço:</label>
+            <select id="tipoServico">
+                <option value="banho-pequeno">Banho - Cachorro Pequeno</option>
+                <option value="banho-medio">Banho - Cachorro Médio</option>
+                <option value="banho-grande">Banho - Cachorro Grande</option>
+            </select>
+        
+            <label for="buscarPet">Buscar o pet?</label>
+            <input type="checkbox" id="buscarPet">
+        
+            <button type="button" onclick="agendarServico()">Agendar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/images/Fase 1.png">
+                        </div>
+                        <ul>
+                            <li><a href="#">contato@caofeliz.com.br</a></li>
+                            <li><a href="#">010-020-0340</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2023 Pet Shop Cao Feliz 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    <link rel="stylesheet" href="assets/css/styles.css"/>    
+    <script src="assets/js/validacao.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/loading.js"></script>
+    
+    <script src="assets/js/agendamento.js"></script>
+</html>
